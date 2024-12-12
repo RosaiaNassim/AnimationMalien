@@ -1,0 +1,22 @@
+body {
+  background-image: url(gros-plan-voie-ferree-metal-traverses-chemin-fer-beton-pierre-ballast_97889-1585.jpg);
+  background-size: cover;
+}
+
+.animation1 {
+  display: flex;
+  justify-content: center;
+}
+
+.QuoiCeTrainNeNousEmmenePasAuMali {
+  animation: 3s linear 0.5s infinite alternate nico;
+}
+
+@keyframes nico {
+  from {
+    margin-left: -20%;
+  }
+  to {
+    margin-left: 100%;
+  }
+}
