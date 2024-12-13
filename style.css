@@ -1,6 +1,7 @@
 body {
-  background-image: url(gros-plan-voie-ferree-metal-traverses-chemin-fer-beton-pierre-ballast_97889-1585.jpg);
+  background-image: url(ocean.jpg);
   background-size: cover;
+  display: flex;
 }
 
 .animation1 {
@@ -8,15 +9,73 @@ body {
   justify-content: center;
 }
 
-.QuoiCeTrainNeNousEmmenePasAuMali {
-  animation: 3s linear 0.5s infinite alternate nico;
+.animbateau {
+  animation: 3s linear 1s bateau;
 }
 
-@keyframes nico {
+.imagebateau {
+  content: url(bateau.webp);
+  height: 250px;
+  width: 250px;
+  margin-top: 350px;
+  animation: opacity 1s;
+  animation-delay: 3.5s;
+}
+
+.imagenassim {
+  animation: nassim 1.2s;
+  animation-delay: 3s;
+  content: url(NassimFinDeMorsure.png);
+  height: 350px;
+  position: relative;
+  left: 1150px;
+  top: 320px;
+}
+
+.rassasier {
+  content: url(NassimRassasier.png);
+  animation: rassasier1 8s;
+  height: 700px;
+  position: relative;
+  left: 200px;
+  top: 15px;
+}
+
+@keyframes nassim {
+  0% {
+    content: url(NassimFinDeMorsure.png);
+  }
+  100% {
+    content: url(NassimMorsure.png);
+  }
+}
+
+@keyframes bateau {
   from {
-    margin-left: -20%;
+    margin-left: 0%;
   }
   to {
-    margin-left: 100%;
+    margin-left: 1125%;
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes rassasier1 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
